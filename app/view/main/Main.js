@@ -82,11 +82,13 @@ Ext.define('ShoppingApp.view.main.Main', {
             xtype: 'mainlist'
         }]
     }, {
-        title: 'Users',
+        title: 'Orders - Click here',
         iconCls: 'fa-user',
-        bind: {
-            html: '{loremIpsum}'
-        }
+        items: [
+            {
+                xtype: 'borderlayout'
+            }
+        ]
     }, {
         title: 'Groups',
         iconCls: 'fa-users',
