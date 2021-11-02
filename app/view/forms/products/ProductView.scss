@@ -1,0 +1,15 @@
+.product-view {
+    background-color: #eeeeee;
+    transition: filter 250ms;
+
+    .grid-image {
+        width: 100%;
+        height: 30px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.blur .product-view {
+    filter: blur(5px) grayscale(80%);
+}

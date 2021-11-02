@@ -77,22 +77,36 @@ Ext.define('ShoppingApp.view.main.Main', {
     items: [{
         title: 'Home',
         iconCls: 'fa-home',
-        // The following grid shares a store with the classic version's grid as well!
         items: [{
-            xtype: 'mainlist'
+            // xtype: 'productdataview',
+            xtype: 'productview',
+
         }]
     }, {
-        title: 'Users',
-        iconCls: 'fa-user',
-        bind: {
-            html: '{loremIpsum}'
+        title: 'Category',
+        items:[
+            {
+                xtype:'categoryform'
+
+            }
+        ]
+    },{
+        title: 'Product',
+        items:[
+            {
+                xtype:'productform'
+
+            }
+        ]
+    },
+    {title:'Login',
+    items:[
+        {
+            xtype:'loginform'
+
         }
-    }, {
-        title: 'Groups',
-        iconCls: 'fa-users',
-        bind: {
-            html: '{loremIpsum}'
-        }
+    ]
+       
     }, {
         title: 'Settings',
         iconCls: 'fa-cog',
