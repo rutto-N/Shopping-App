@@ -10,33 +10,22 @@ Ext.define('ShoppingApp.store.Menu', {
                 expanded: true,
                 children: [{
                         text: 'Products',
-                        url: 'products',
                         leaf: true,
-                        xtype: 'countypanel',
+                        xtype: 'productdataview',
                     },
                     {
                         text: 'Add Product',
                         leaf: true,
-                        url: 'add-county',
-                        xtype: 'countyformpanel',
+                        xtype: 'productform',
                     }
                 ]
             }, {
-                text: 'Users',
+                text: 'Category',
                 expanded: true,
                 children: [{
-                        text: 'Users',
+                        text: 'Category Form',
                         leaf: true,
-                        url: 'users',
-                        xtype: 'studentview',
-                        iconCls: 'fas fa-users',
-                    },
-                    {
-                        text: 'Add User',
-                        leaf: true,
-                        url: 'student-form-panel',
-                        xtype: 'studentformpanel',
-                        iconCls: 'fas fa-user-edit'
+                        xtype: 'categoryform',
                     }
                 ]
             },
@@ -48,16 +37,19 @@ Ext.define('ShoppingApp.store.Menu', {
                         leaf: true,
                         xtype: 'userview'
                     },
-                    {
-                        text: 'algebra',
-                        leaf: true
-                    }
+                    
                 ]
             },
             {
-                text: 'Posts',
+                text: 'Login',
                 expanded: true,
-                children: []
+                children: [
+                    {
+                        text: 'Form',
+                        leaf: true,
+                        xtype: 'loginform'
+                    },
+                ]
             }
         ]
     }

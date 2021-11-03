@@ -44,6 +44,7 @@ Ext.define('ShoppingApp.view.forms.products.ProductForm',{
                     allowBlank:true
                 },{
                     xtype: 'filefield',
+                    
                     name: 'image',
                     fieldLabel: 'Photo',
                     msgTarget: 'side',
