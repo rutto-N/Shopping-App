@@ -106,15 +106,10 @@ Ext.define('ShoppingApp.view.main.Main', {
         {
             xtype:'loginform',
         title: 'Orders - Click here',
-        iconCls: 'fa-user',
-        items: [
-            {
-                xtype: 'borderlayout'
-            }
-        ]
+        
     },
     {
-        title: 'Groups',
+        title: 'Dataview',
         items:[
             {
                 xtype:'productdataview'
@@ -124,10 +119,11 @@ Ext.define('ShoppingApp.view.main.Main', {
     ]
        
     }, {
-        title: 'Settings',
-        iconCls: 'fa-cog',
-        bind: {
-            html: '{loremIpsum}'
-        }
+        title: 'Layout',
+        items: [
+            {
+                xtype: 'borderlayout'
+            }
+        ]
     }]
 });

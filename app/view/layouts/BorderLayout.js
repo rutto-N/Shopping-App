@@ -1,14 +1,12 @@
 Ext.define('ShoppingApp.view.layouts.BorderLayout', {
-    extend: 'Ext.window.Window',
+    extend: 'Ext.panel.Panel',
     xtype: 'borderlayout',
     autoShow: true,
-    width: 520,
     shadow: true,
     modal: true,
     autoShow: true,
     closable: true,
     maximizable: true,
-    // title: 'Border layout',
     height: 500,
     layout: 'border',
     items: [{
@@ -35,7 +33,8 @@ Ext.define('ShoppingApp.view.layouts.BorderLayout', {
             width: 200,
             collapsible: true, // make collapsible
             id: 'west-region-container',
-            layout: 'fit'
+            layout: 'fit',
+          
         },
         {
             // xtype: 'panel' implied by default
