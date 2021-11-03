@@ -83,7 +83,6 @@ Ext.define('ShoppingApp.view.main.Main', {
 
         }]
     }, {
-<<<<<<< HEAD
         title: 'Category',
         items:[
             {
@@ -91,7 +90,8 @@ Ext.define('ShoppingApp.view.main.Main', {
 
             }
         ]
-    },{
+    },
+    {
         title: 'Product',
         items:[
             {
@@ -100,12 +100,11 @@ Ext.define('ShoppingApp.view.main.Main', {
             }
         ]
     },
-    {title:'Login',
-    items:[
+    {
+        title:'Login',
+        items:[
         {
-            xtype:'loginform'
-
-=======
+            xtype:'loginform',
         title: 'Orders - Click here',
         iconCls: 'fa-user',
         items: [
@@ -113,13 +112,15 @@ Ext.define('ShoppingApp.view.main.Main', {
                 xtype: 'borderlayout'
             }
         ]
-    }, {
+    },
+    {
         title: 'Groups',
-        iconCls: 'fa-users',
-        bind: {
-            html: '{loremIpsum}'
->>>>>>> 90598837eaf33a3f18fa3fba766c76d4644f893c
-        }
+        items:[
+            {
+                xtype:'productdataview'
+            }
+        ]
+    }
     ]
        
     }, {
