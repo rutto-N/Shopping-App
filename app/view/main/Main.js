@@ -83,6 +83,7 @@ Ext.define('ShoppingApp.view.main.Main', {
 
         }]
     }, {
+<<<<<<< HEAD
         title: 'Category',
         items:[
             {
@@ -104,6 +105,20 @@ Ext.define('ShoppingApp.view.main.Main', {
         {
             xtype:'loginform'
 
+=======
+        title: 'Orders - Click here',
+        iconCls: 'fa-user',
+        items: [
+            {
+                xtype: 'borderlayout'
+            }
+        ]
+    }, {
+        title: 'Groups',
+        iconCls: 'fa-users',
+        bind: {
+            html: '{loremIpsum}'
+>>>>>>> 90598837eaf33a3f18fa3fba766c76d4644f893c
         }
     ]
        
