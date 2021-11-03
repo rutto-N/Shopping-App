@@ -34,6 +34,14 @@ Ext.define('ShoppingApp.view.layouts.BorderLayout', {
             collapsible: true, // make collapsible
             id: 'west-region-container',
             layout: 'fit',
+            items:[
+                {   
+                     xtype: 'navigationpanel',
+
+                }
+
+            ]
+            
           
         },
         {
@@ -51,7 +59,13 @@ Ext.define('ShoppingApp.view.layouts.BorderLayout', {
             region: 'center', // center region is required, no width/height specified
             xtype: 'panel',
             layout: 'fit',
-            margin: '5 5 0 0'
+            margin: '5 5 0 0',
+            items:[
+                {
+                    title:"Products",
+                    xtype:'productview'
+                }
+            ]
         },
     ],
 });
